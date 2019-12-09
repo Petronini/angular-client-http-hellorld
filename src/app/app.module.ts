@@ -11,8 +11,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
 import {TableModule} from 'primeng/table';
 
-
-
 // components
 import { AppComponent } from './app.component';
 import { AltaCamareroComponent } from './components/alta-camarero/alta-camarero.component';
@@ -20,7 +18,6 @@ import { AltaProductoComponent } from './components/alta-producto/alta-producto.
 import { ListadoCamareroComponent } from './components/listado-camarero/listado-camarero.component';
 import { ListadoProductoComponent } from './components/listado-producto/listado-producto.component';
 import { HomeComponent } from './components/home/home.component';
-
 
 @NgModule({
   declarations: [
