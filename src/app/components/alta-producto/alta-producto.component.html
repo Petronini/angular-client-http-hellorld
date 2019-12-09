@@ -1,0 +1,37 @@
+<p>alta-producto works!</p>
+
+<div>
+<h2>Alta producto</h2>
+<label>Codigo</label>
+<input type="text" [(ngModel)]="producto.codigo"><br>
+
+<label>Nombre</label>
+<input type="text" [(ngModel)]="producto.nombre"><br>
+
+<label>Descripción</label>
+<textarea cols="30" rows="10"  [(ngModel)]="producto.descripcion"></textarea><br>
+
+
+<label>fechaAlta</label>
+<input type="date" [(ngModel)]="producto.fechaAlta"><br>
+
+<label>precio</label>
+<input type="text" [(ngModel)]="producto.precio"><br>
+
+<label>descatalogado</label>
+<input type="checkbox" [(ngModel)]="producto.descatalogado">
+
+<label>Familia</label>
+<select [(ngModel)]="producto.categoria"><br>
+    <option>TAPA</option>
+    <option>COMIDA</option>
+    <option>CERVEZA</option>
+    <option>CAFE</option>
+</select>
+<button (click)="crear()">Crear Producto</button>
+
+
+
+</div>
+
+

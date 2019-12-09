@@ -1,0 +1,35 @@
+<div>
+    <h2>Listado camareros</h2>
+
+    <p-table [value]="camareros">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-camarero>
+            <tr>
+                <td>{{camarero.codigo}}</td>
+                <td>{{camarero.nombre}}</td>
+   
+            </tr>
+        </ng-template>
+    </p-table>
+
+
+
+    <table>
+        <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+        </tr>
+        <tr *ngFor="let camarero of camareros">
+            <td>{{ camarero.codigo }}</td>
+            <td>{{ camarero.nombre }}</td>
+        </tr>
+    </table>
+    
+
+</div>
